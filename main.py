@@ -59,9 +59,9 @@ def RunPython(script_name):  # Função para executar um arquivo Python no diret
             if execucao.stderr:
                 print(execucao.stderr.decode('utf-8', errors='replace'))
         except Exception as e:
-            print(f'Erro ao executar o script Python: {e}')
+            print(f'Erro ao executar o codigo Python: {e}')
     else:
-        print(f'O arquivo {script_name} não é um arquivo Python ou não existe.')
+        print(f'O arquivo {script_name} não é um .py ou não existe.')
 
 
 while True:
